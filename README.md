@@ -122,6 +122,32 @@ This application analyzes satellite/aerial imagery using computer vision (YOLOv8
 
    Frontend will open at `http://localhost:3000`
 
+## Cloud Deployment
+
+### Deploy to Railway (Recommended)
+
+Deploy your application online in minutes with Railway:
+
+**Quick Start**:
+1. Sign up at https://railway.app
+2. Create new project from GitHub
+3. Add PostgreSQL database
+4. Set `ANTHROPIC_API_KEY` environment variable
+5. Deploy backend and frontend services
+
+**Full guide**: See [RAILWAY_DEPLOYMENT.md](./RAILWAY_DEPLOYMENT.md) for detailed step-by-step instructions.
+
+**Other platforms**: The application can also be deployed to:
+- Render.com (similar to Railway)
+- Google Cloud Run
+- AWS Elastic Beanstalk
+- DigitalOcean App Platform
+
+All platforms require:
+- PostgreSQL database
+- GDAL support (via Docker)
+- Anthropic API key
+
 ## Usage
 
 ### 1. Upload Image
