@@ -124,24 +124,41 @@ This application analyzes satellite/aerial imagery using computer vision (YOLOv8
 
 ## Cloud Deployment
 
-### Deploy to Railway (Recommended)
+### Deploy to DigitalOcean Droplet (Recommended)
 
-Deploy your application online in minutes with Railway:
+Deploy to your own VPS with full control:
+
+**Quick Start**:
+1. Create Ubuntu 22.04 droplet ($12/month)
+2. Run automated setup script
+3. Configure domain and SSL
+4. Deploy application
+
+**Cost**: ~$12-15/month | **Setup time**: 15-20 minutes
+
+**Full guide**: See [DIGITALOCEAN_DEPLOYMENT.md](./DIGITALOCEAN_DEPLOYMENT.md) for complete step-by-step instructions.
+
+### Alternative: Deploy to Railway (PaaS)
+
+Quick deployment without server management:
 
 **Quick Start**:
 1. Sign up at https://railway.app
-2. Create new project from GitHub
+2. Deploy from GitHub
 3. Add PostgreSQL database
-4. Set `ANTHROPIC_API_KEY` environment variable
-5. Deploy backend and frontend services
+4. Set environment variables
 
-**Full guide**: See [RAILWAY_DEPLOYMENT.md](./RAILWAY_DEPLOYMENT.md) for detailed step-by-step instructions.
+**Cost**: $5 credit/month (free tier) | **Setup time**: 5-10 minutes
 
-**Other platforms**: The application can also be deployed to:
-- Render.com (similar to Railway)
-- Google Cloud Run
-- AWS Elastic Beanstalk
-- DigitalOcean App Platform
+**Full guide**: See [RAILWAY_DEPLOYMENT.md](./RAILWAY_DEPLOYMENT.md)
+
+### Other Platforms
+
+The application is ready for:
+- **Render.com**: Similar to Railway, free tier available
+- **Google Cloud Run**: Serverless, pay-per-use
+- **AWS Elastic Beanstalk**: Enterprise-grade AWS deployment
+- **DigitalOcean App Platform**: PaaS alternative to droplet
 
 All platforms require:
 - PostgreSQL database
